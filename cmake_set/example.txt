@@ -1,0 +1,90 @@
+set_if_undefined_cli
+  no args
+    -- Before: 
+    -- After: DEFAULT
+  reconfigure with args
+    -- Before: 1.1.0
+    -- After: DEFAULT
+  reconfigure no args
+    -- Before: 1.1.0
+    -- After: DEFAULT
+
+cache_force
+  no args
+    -- Before: 
+    -- After: DEFAULT
+  reconfigure with args
+    -- Before: 1.1.0
+    -- After: DEFAULT
+  reconfigure no args
+    -- Before: DEFAULT
+    -- After: DEFAULT
+
+cache
+  no args
+    -- Before: 
+    -- After: DEFAULT
+  reconfigure with args
+    -- Before: 1.1.0
+    -- After: 1.1.0
+  reconfigure no args
+    -- Before: 1.1.0
+    -- After: 1.1.0
+
+set_if_undefined_cache_force
+  no args
+    -- Before: 
+    -- After: DEFAULT
+  reconfigure with args
+    -- Before: 1.1.0
+    -- After: 1.1.0
+  reconfigure no args
+    -- Before: 1.1.0
+    -- After: 1.1.0
+
+set
+  no args
+    -- Before: 
+    -- After: DEFAULT
+  reconfigure with args
+    -- Before: 1.1.0
+    -- After: DEFAULT
+  reconfigure no args
+    -- Before: 1.1.0
+    -- After: DEFAULT
+
+set_if_undefined_uncache
+  no args
+    -- Before: 
+    -- After: DEFAULT
+  reconfigure with args
+    -- Before: 1.1.0
+    -- After: 1.1.0
+    -- But not defined outside this file
+  reconfigure no args
+    -- Before: 
+    -- After: DEFAULT
+    -- But not defined outside this file
+
+set_if_undefined
+  no args
+    -- Before: 
+    -- After: DEFAULT
+  reconfigure with args
+    -- Before: 1.1.0
+    -- After: 1.1.0
+  reconfigure no args
+    -- Before: 1.1.0
+    -- After: 1.1.0
+
+set_if_undefined_cache
+  no args
+    -- Before: 
+    -- After: DEFAULT
+  reconfigure with args
+    -- Before: 1.1.0
+    -- After: 1.1.0
+  reconfigure no args
+    -- Before: 1.1.0
+    -- After: 1.1.0
+
